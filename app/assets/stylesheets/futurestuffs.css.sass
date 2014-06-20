@@ -1,0 +1,21 @@
+main
+
+  p
+    &::selection
+      background: blue
+      color: white
+
+  input
+    &:in-range
+      border: green 3px solid
+
+    &:out-of-range
+      border: red 3px solid
+
+    &:focus
+      &:in-range
+        border: green 3px solid
+
+      &:out-of-range
+        border: red 3px solid
+

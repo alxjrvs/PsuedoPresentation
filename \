@@ -37,4 +37,4 @@
         Here's a picture of a couple...
         %span ...of jerks!
 
-      -#=text_field_tag "range", 12,  min: 1, max: 10, placeholder: "1 to 10", type: 'number'
+      =
