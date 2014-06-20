@@ -1,0 +1,26 @@
+main
+
+  
+  a
+    &:target
+      font-weight: bold
+      font-size: 100px
+      color: red
+
+  li
+    +ribbon(red)
+
+    &:nth-last-child(-n+2)
+      +ribbon(#e5e5e5)
+      color: black
+
+    &:last-child
+      text-transform: uppercase
+      font-weight: bolder
+
+
+    &:nth-child(0n+3)
+      margin-left: 50px
+    &:nth-child(0n+4)
+      margin-left: 400px
+

@@ -1,0 +1,25 @@
+main
+
+  h1
+    &::first-letter
+      font-size: 40px
+      font-weight: 800
+      color: red
+
+  a
+    font-size: 30px
+    padding-top: 20px
+    span
+      display: none
+
+    &:hover
+      span
+        display: inline
+
+  ul
+    position: relative
+    z-index: 1
+
+
+  li
+    +ribbon(red)

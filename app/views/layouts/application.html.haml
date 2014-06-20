@@ -12,8 +12,27 @@
     = javascript_include_tag :application
     = javascript_include_tag "vendor/modernizr"
 
-  %body{ body_attributes }
+  %body
     = render 'shared/flashes'
 
     %main
-      = yield
+      %h1 Having fun with Pseudo Selectors
+      %ul
+        %li
+          %p There once was a T-rex named Leroy,
+        %li
+          %p Who wanted to code and to de-ploy.
+        %li
+          %p So he booted up rails,
+        %li
+          %p and saw his first test fail,
+        %li
+          %p So now all he does is de-stroy.
+        %li
+          %p Rhymes are Hard,
+        %li
+          %p Alex Jarvis.
+
+      =link_to "http://i.imgur.com/sgo43a2.jpg", id: 'datenight', target: :blank do
+        Here's a picture of a couple...
+        %span ...of jerks!
